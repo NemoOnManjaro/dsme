@@ -2,7 +2,7 @@
 # Maintainer: Chupligin Sergey (NeoChapay) <neochapay@gmail.com>
 
 pkgname=dsme-git
-pkgver=0.83.2.r0.g24c6e56
+pkgver=0.84.0.r0.gd151817
 pkgrel=1
 pkgdesc="Device State Management Entity"
 arch=('x86_64' 'aarch64')
@@ -39,7 +39,8 @@ build() {
 	--enable-systemd \
 	--enable-pwrkeymonitor \
 	--disable-validatorlistener \
-	--enable-abootsettings
+	--enable-abootsettings \
+	--enable-usewheel
     make
 }
 
